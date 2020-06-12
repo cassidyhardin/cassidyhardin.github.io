@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.project-card {
+  background-color:  #cdf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.project-name {
+  color:  #7861fb;
+}
+.project-github {
+  color:  #2268ff;
+}
+
+.project-features {
+  background-color: white;
+  color: #282c34;
+  
+}

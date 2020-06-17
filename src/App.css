@@ -37,22 +37,11 @@
   }
 }
 
-.project-card {
-  background-color:  #cdf5ff;
-  display: flex;
+/* project cards */
+.card {
+  width: 18rem;
   flex-direction: column;
   align-items: center;
-
-}
-.project-name {
-  color:  #7861fb;
-}
-.project-github {
-  color:  #2268ff;
-}
-
-.project-features {
-  background-color: white;
-  color: #282c34;
-  
+  display: flex;
+  padding: 1mm;
 }

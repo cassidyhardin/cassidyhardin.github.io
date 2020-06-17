@@ -1,6 +1,6 @@
 import React from "react";
 // import logo from "./logo.svg";
-// import cassidy from "./cassidy.jpeg";
+import background from "./background.jpeg";
 import "./App.css";
 import About from "./components/about";
 import Navbar from "./components/navbar";
@@ -11,6 +11,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
+      <img src={background} className="display-picture" alt="logo" />
       <div className="App">
         <About></About>
         <Projects></Projects>

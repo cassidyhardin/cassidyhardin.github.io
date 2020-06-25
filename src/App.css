@@ -1,47 +1,323 @@
-.App {
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.body {
+  padding-top: 70px;
+}
+
+.home {
+  background-image: url("./background.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-heading {
+  position: relative;
+  top: 16vh;
+  /* left: 10vw; */
+  letter-spacing: 2px;
+
+  font-size: min(8vw, 70px);
+  font-weight: 200;
+  color: rgb(255, 224, 199);
+  text-align: center;
+}
+.home-attributes-text {
+  /* display: inline; */
+  position: relative;
+
+  top: 20vh;
+  /* left: 17vw; */
+  font-size: min(8vw, 70px);
+  font-weight: 200;
+  color: rgb(255, 224, 199);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-attributes {
+  /* display: inline; */
+  position: relative;
+  text-align: center;
+  font-size: min(8vw, 70px);
+  font-weight: 300;
+  color: rgb(255, 224, 199);
+}
+.homeLinks {
+  position: relative;
+  top: 22vh;
+  letter-spacing: 2px;
+  padding: 8px 15px;
+  font-size: min(8vw, 70px);
+  font-weight: 200;
+  color: rgb(192, 156, 132);
+  text-align: center;
+}
+.homeLinks a:link {
+  color: rgb(192, 156, 132);
+  font-size: min(4vw, 40px);
+  padding: 8px 15px;
+  margin-left: 18px;
+  text-decoration: none;
+  display: inline-block;
+  font-style: lighter;
+  /* font-weight: 3px; */
+}
+.homeLinks a:visited {
+  font-size: min(4vw, 40px);
+  color: rgb(236, 187, 155);
+  text-decoration: none;
+  font-style: lighter;
+  /* font-weight: 3px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.homeLinks a:hover {
+  font-size: min(4vw, 40px);
+
+  color: rgb(75, 63, 55);
+
+  text-decoration: none;
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* NAVBAR */
+
+.navTitle {
+  color: dimgrey;
+  font-style: lighter;
+  font-weight: lighter;
 }
 
-.App-link {
-  color: #61dafb;
+.navTitle a:link {
+  color: dimgrey;
+  font-size: 28px;
+  font-style: lighter;
+  font-weight: lighter;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navTitle a:visited {
+  color: dimgrey;
+  font-size: 28px;
+  font-style: lighter;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.navTitle a:hover {
+  color: rgb(85, 84, 84);
+  font-size: 28px;
+  font-style: lighter;
+  font-weight: normal;
+  text-decoration: none;
+}
+.navLink {
+  display: inline; /*display list horizontally*/
+}
+.navLink.dropdown.nav-item {
+  color: dimgrey;
+  text-decoration: none;
+  font-style: lighter;
+  font-weight: lighter;
+  width: max-content;
+}
+.dropdown-menu.show {
+  display: block;
+  text-align: center;
+  border-spacing: 0ch;
+}
+
+.navLink a:link {
+  color: dimgrey;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style: lighter;
+  font-weight: lighter;
+}
+.navLink a:visited {
+  color: dimgrey;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style: lighter;
+  font-weight: lighter;
+}
+
+.navLink a:hover {
+  color: rgb(85, 84, 84);
+  padding: 10px 33px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 /* project cards */
-.card {
-  width: 18rem;
-  flex-direction: column;
-  align-items: center;
+
+.projectBadge.badge {
+  padding: 2% 2%;
+  position: center;
+  font-style: lighter;
+  font-weight: lighter;
+  font-size: 18px;
+  background-color: rgb(219, 215, 255);
+  color: black;
+}
+
+.badges {
+  height: 85px;
+  padding: 15px 0px;
+  display: center;
+  font-size: 17px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.badges > span {
+  display: inline-block;
+  display: -moz-inline-box;
+  padding: 6% 6%;
+  *display: inline;
+  margin-left: 7px;
+  margin-top: 7px;
+  position: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.cardBox {
   display: flex;
-  padding: 1mm;
+  padding: 5px 5px;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  display: "flex";
+  flex-direction: "row";
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolioCard {
+  flex: 1;
+  position: center;
+  padding: 5px 5px;
+  min-width: 275px;
+}
+.portfolioCard.card-deck {
+  padding: 25px 25px;
+  margin-left: 7px;
+  margin-right: 7px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  flex-direction: "row";
+  /* width: min-content; */
+
+  /* margin-top: 80px; */
+}
+.card-title.h5 {
+  padding: 10px 0px;
+  color: darkcyan;
+  font-weight: normal;
+  font-size: 30px;
+}
+.portfolioCard.card {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 30px 10px 25px 10px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+.portfolioCard.card-body {
+  padding: 0px 20px;
+  min-width: 275px;
+}
+
+.card-text {
+  text-align: left;
+  height: 165px;
+}
+.links {
+  text-align: center;
+  display: block;
+}
+.cardLink.card-link {
+  color: #6c757d;
+  font-style: lighter;
+  font-weight: lighter;
+}
+.cardLink.card-link {
+  color: #6c757d;
+  font-style: lighter;
+  font-weight: lighter;
+}
+
+.cardLink.card-link:link {
+  color: #6c757d;
+  font-size: 19px;
+  font-style: lighter;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.cardLink.card-link:visited {
+  color: #6c757d;
+  font-size: 19px;
+  font-style: lighter;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.cardLink.card-link:hover {
+  color: rgb(41, 41, 41);
+  font-size: 19px;
+  font-style: lighter;
+  font-weight: normal;
+  text-decoration: none;
+}
+/* background iamge */
+.backImage {
+  position: relative;
+  display: flex;
+  scroll-padding-top: 10;
+  width: 100%;
+  size: 100%;
+}
+.backText {
+  position: absolute;
+  padding: 10px;
+}
+
+/* ABOUT */
+
+.introduction {
+  position: relative;
+  z-index: 1;
 }

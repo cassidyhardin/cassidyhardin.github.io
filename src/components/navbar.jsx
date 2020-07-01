@@ -25,9 +25,7 @@ const NavBar = () => {
           <Link className="navLink" to="/resume">
             RESUME{" "}
           </Link>
-          <Link className="navLink" to="/contact">
-            CONTACT{" "}
-          </Link>
+
           <NavDropdown title="TEACHING" className="navLink">
             <Link className="navLink" to="/cs61B">
               Data Structures (CS61B){" "}

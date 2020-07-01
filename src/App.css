@@ -186,7 +186,7 @@ html {
 }
 
 .badges {
-  height: 85px;
+  height: 95px;
   padding: 15px 0px;
   display: center;
   font-size: 17px;
@@ -238,20 +238,27 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: "row";
-  /* width: min-content; */
-
-  /* margin-top: 80px; */
 }
-.card-title.h5 {
-  padding: 10px 0px;
-  color: darkcyan;
+.portfolioCard.card-title {
+  /* padding: 10px 0px; */
+
+  color: rgb(175, 197, 236);
   font-weight: normal;
-  font-size: 30px;
+  font-size: 34px;
+  padding: 0px;
+  height: 82px;
+  margin-top: 0;
+  margin-bottom: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
 }
 .portfolioCard.card {
   min-width: 300px;
   max-width: 400px;
-  margin: 30px 10px 25px 10px;
+  margin: 30px 10px 30px 10px;
   padding: 10px 15px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.3);
@@ -261,13 +268,24 @@ html {
   min-width: 275px;
 }
 
+.portfolioCard.card-subtitle {
+  padding-top: 4px;
+  margin-bottom: 3px;
+  font-size: 22px;
+  font-weight: normal;
+  color: #6c757d;
+}
+
 .card-text {
   text-align: left;
-  height: 165px;
+  height: 240px;
+  font-weight: lighter;
+  font-size: large;
 }
 .links {
   text-align: center;
   display: block;
+  height: 50px;
 }
 .cardLink.card-link {
   color: #6c757d;
@@ -316,8 +334,195 @@ html {
 }
 
 /* ABOUT */
+/* PROFILE */
 
 .introduction {
-  position: relative;
+  position: absolute;
+  /* top: 40%; */
+  width: 100%;
+  height: 100vh;
+}
+
+.introduction-text {
+  top: 30%;
+  float: left;
+  position: absolute;
+  left: 16vw;
+  text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #6c757d;
+  width: 35vw;
+  /* margin: 100px 100px 100px 100px; */
   z-index: 1;
+}
+.profile {
+  background-image: url("./bw.jpeg");
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 15px 15px;
+  border-bottom-width: 50px;
+}
+
+/* RESUME */
+
+.resume {
+  background-image: url("./resume.jpg");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 60px;
+}
+
+/* TEACHING */
+.class.card {
+  margin-top: 80px;
+  padding: 10px 43px;
+  border: none;
+}
+
+.class.card-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(131, 168, 236);
+  margin-bottom: 3px;
+}
+
+.class.card-subtitle {
+  color: #6c757d;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.class.card-body {
+  color: black;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 0px 0px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.class.card-link {
+  font-size: 20px;
+  margin-top: 0px;
+  color: #6c757d;
+  width: fit-content;
+}
+
+.classes a:link {
+  text-decoration: none;
+}
+.classes a:visited {
+  text-decoration: none;
+}
+.classes a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.classes.card-deck {
+  padding: 225px 25px;
+  margin-left: 57px;
+  margin-right: 57px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  flex-direction: "row";
+}
+.classes.card-deck .card {
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.classes.card {
+  min-width: 380px;
+  max-width: 500px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12),
+    0 1px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.classes.card-title {
+  color: rgb(175, 197, 236);
+  font-weight: 10px;
+  font-style: lighter;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.classes.card-subtitle {
+  color: rgb(175, 197, 236);
+  font-size: 26px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px 20px;
+  /* margin-top: 10px; */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.classes.card-body {
+  color: black;
+  font-weight: 100;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* SECTION INFO */
+.teaching {
+  padding: 15px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section.card {
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  min-width: 300px;
+}
+
+.section.card-title {
+  color: rgb(131, 168, 236);
+  padding: 0px 7px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  width: fit-content;
+  display: inline-blocks;
+  position: relative;
+}
+
+.section.card-subtitle {
+  top: 12px;
+  right: 12px;
+  position: absolute;
+  text-align: right;
+  color: #6c757d;
+  font-size: 23px;
+  font-weight: lighter;
+  width: 120px;
+  padding-bottom: 5px;
+}
+
+.section.card-body {
+  position: relative;
+  padding: 7px 7px;
+  margin-top: 10px;
+  font-style: lighter;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  font-size: 17px;
+  font-weight: lighter;
+  color: black;
 }

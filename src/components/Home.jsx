@@ -19,7 +19,7 @@ class Home extends Component {
           <Link to="/about">ABOUT </Link>
           <Link to="/portfolio">PORTFOLIO </Link>
           <Link to="/resume">RESUME </Link>
-          <Link to="/contact">CONTACT </Link>
+          <Link to="/teaching">TEACHING </Link>
         </div>
       </div>
     );

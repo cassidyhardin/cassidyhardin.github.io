@@ -49,11 +49,7 @@ class CS61B extends Component {
               {" "}
               Thursday <br></br> 13 Feburary
             </Card.Subtitle>
-            <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
-            </Card.Body>
+            <Card.Body className="section">Linked lists and Arrays!</Card.Body>
           </Card>
           {/* THREE */}
           <Card className="section">
@@ -63,9 +59,8 @@ class CS61B extends Component {
               Thursday <br></br> 20 Feburary
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Introduction into polymorphism, inheritance, casting and higher
+              order functions.
             </Card.Body>
           </Card>
           {/* FOUR */}
@@ -75,11 +70,7 @@ class CS61B extends Component {
               {" "}
               Thursday <br></br> 27 Feburary
             </Card.Subtitle>
-            <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
-            </Card.Body>
+            <Card.Body className="section">Iterators & Iterables</Card.Body>
           </Card>
           {/* FIVE */}
           <Card className="section">
@@ -88,9 +79,8 @@ class CS61B extends Component {
               Thursday <br></br> 5 March
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Introduction into abstract data types, and disjoint sets, and
+              continuation of asymptotics.
             </Card.Body>
           </Card>
           {/* SIX */}
@@ -100,9 +90,7 @@ class CS61B extends Component {
               Thursday <br></br> 12 March
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Binary Trees, Red-Black Trees, & B-Trees!
             </Card.Body>
           </Card>
           {/* SEVEN */}
@@ -112,9 +100,8 @@ class CS61B extends Component {
               Thursday <br></br> 19 March
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Introduction into priority queues and heap implementation, and
+              hashing.
             </Card.Body>
           </Card>
           {/* EIGHT */}
@@ -124,9 +111,7 @@ class CS61B extends Component {
               Thursday <br></br> 2 April
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Graph and Tree traversal and shortest paths algorithims.
             </Card.Body>
           </Card>
           {/* NINE */}
@@ -135,11 +120,7 @@ class CS61B extends Component {
             <Card.Subtitle className="section">
               Thursday <br></br> 9 April
             </Card.Subtitle>
-            <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
-            </Card.Body>
+            <Card.Body className="section">Minimum spanning trees.</Card.Body>
           </Card>
           {/* TEN */}
           <Card className="section">
@@ -148,9 +129,7 @@ class CS61B extends Component {
               Thursday <br></br> 16 April
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Introduction into sorting algorithims.
             </Card.Body>
           </Card>
           {/* ELEVEN */}
@@ -160,9 +139,7 @@ class CS61B extends Component {
               Thursday <br></br> 23 April
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              More sorting - quick sort, merge sort and radix sort.
             </Card.Body>
           </Card>
           {/* TWELEVE */}
@@ -172,9 +149,7 @@ class CS61B extends Component {
               Thursday <br></br> 30 April
             </Card.Subtitle>
             <Card.Body className="section">
-              Introduction into Java and object types. Beginning to examine
-              inheritance, the golden rule of equals, and pass by value and pass
-              by object.
+              Real world problems and applications of abstract data types.
             </Card.Body>
           </Card>
         </div>

@@ -113,12 +113,6 @@ class Project extends Component {
                 >
                   GitHub
                 </Card.Link>
-                <Card.Link
-                  href="https://docs.tarjimly.org"
-                  className="cardLink"
-                >
-                  TarjimlyDocs.org
-                </Card.Link>
               </div>
             </Card.Body>
           </Card>
@@ -262,7 +256,7 @@ class Project extends Component {
           <Card className="portfolioCard">
             <Card.Body>
               <Card.Title className="portfolioCard">
-                IT Payroll Retention and Equity Analysis{" "}
+                IT Payroll Equity Analysis{" "}
               </Card.Title>
               <Card.Subtitle className="portfolioCard">2019</Card.Subtitle>
               <Card.Text>
